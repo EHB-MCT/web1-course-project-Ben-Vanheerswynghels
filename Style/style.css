@@ -120,4 +120,40 @@ h2 {
         font-size: 16px;
         line-height: 24px;
     }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        margin-bottom: 16px;
+    }
+
+    #menu_toggle {
+        display: none;
+    }
+
+    .menu_icon {
+        display: block;
+        font-size: 32px;
+        color: #2200e6;
+        cursor: pointer;
+        margin-left: 8px;
+        margin-bottom: 12px;
+        user-select: none;
+    }
+
+    nav .nav_list {
+        display: none;
+        flex-direction: column;
+    }
+
+    #menu_toggle:checked ~ nav .nav_list {
+        display: flex;
+    }
+
+    .link_list_item {
+        margin: 8px 0;
+    }
 }
